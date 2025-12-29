@@ -13,7 +13,7 @@ std::ostream &operator<<(std::ostream &out, const Employee &e) {
 
 int main() {
 
-  Employee joe{};
+  Employee joe{.id{2}, .age{20}, .wage{4500.0f}};
 
   joe.age = 100;
 
