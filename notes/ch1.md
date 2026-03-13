@@ -18,4 +18,18 @@
 
 ## 1.3
 
+- In computing, data is any information that can be moved, processed, or stored by a computer.
+
+- Values that are placed directly into the source code are called literals.
+
+- Literals are read-only values, so their values can’t be modified.
+
+- An object represents a region of storage (typically RAM or a CPU register) that can hold a value.
+
+- a variable in our program, we need to tell the compiler that we want one. The most common way to do this is by use of a special kind of declaration statement called a definition
+
+- At runtime (when the program is loaded into memory and run), each object is given an actual storage location (such as RAM, or a CPU register) that it can use to store values
+
+- The process of reserving storage for an object’s use is called allocation.
+
 -
