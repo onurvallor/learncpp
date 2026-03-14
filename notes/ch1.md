@@ -32,4 +32,28 @@
 
 - The process of reserving storage for an object’s use is called allocation.
 
+- After a variable has been defined, you can give it a value (in a separate statement) using the = operator. This process is called assignment, and the = operator is called the assignment operator.
+
+- By default, assignment copies the value on the right-hand side of the = operator to the variable on the left-hand side of the operator. This is called copy-assignment.
+
+- The process of specifying an initial value for an object is called initialization, and the syntax used to initialize an object is called an initializer
+
+- no initializer is provided (such as for variable a above), this is called default-initialization. In many cases, default-initialization performs no initialization, and leaves the variable with an indeterminate value (garbage value)
+
+- When an initial value is provided after an equals sign, this is called copy-initialization. This form of initialization was inherited from the C language.
+
+- Copy-initialization is also used whenever values are implicitly copied, such as when passing arguments to a function by value, returning from a function by value, or catching exceptions by value.
+
+- Direct-initialization is also used when values are explicitly cast to another type (e.g. via static_cast).
+
+- Additionally, list-initialization also provides a way to initialize objects with a list of values rather than a single value (which is why it is called “list-initialization”)
+
+- One of the primary benefits of list-initialization for new C++ programmers is that “narrowing conversions” are disallowed.
+
+- value-initialization (and default-initialization) may instead initialize the object to predefined default values, which may be non-zero.
+
+- Initialize your variables upon creation.
+
+- C++17 introduced the [[maybe_unused]] attribute, which allows us to tell the compiler that we’re okay with a variable being unused.
+
 -
