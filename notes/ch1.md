@@ -56,4 +56,31 @@
 
 - C++17 introduced the [[maybe_unused]] attribute, which allows us to tell the compiler that we’re okay with a variable being unused.
 
--
+## 1.5
+
+- Using std::endl is often inefficient, as it actually does two jobs: it outputs a newline (moving the cursor to the next line of the console), and it flushes the buffer (which is slow).
+- If we output multiple lines of text ending with std::endl, we will get multiple flushes, which is slow and probably unnecessary.
+
+- ‘\n’ is represented in source code as two symbols, it is treated by the compiler as a single linefeed (LF) character (with ASCII value 10),
+
+- xtraction operator ‘>>’ removes characters from the front of the input buffer and converts them into a value that is assigned (via copy-assignment) to the associated variable.
+
+## 1.6
+
+- C/C++ does not automatically initialize most variables to a given value (such as zero)
+
+- Undefined behavior (often abbreviated UB) is the result of executing code whose behavior is not well-defined by the C++ language.
+
+- Behavior that is defined by the implementation is called implementation-defined behavior. Implementation-defined behavior must be documented and consistent for a given implementation.
+
+- A literal (also known as a literal constant) is a fixed value that has been inserted directly into the source code.
+
+- the value of a literal is fixed and cannot be changed. The literal 5 always has value 5.
+
+## 1.9
+
+- An operator (or function) that has some observable effect beyond producing a return value is said to have a side effect.
+
+- Both operator= and operator<< (when used to output values to the console) return their left operand. Thus, x = 5 returns x, and std::cout << 5 returns std::cout. This is done so that these operators can be chained.
+
+## 1.10
